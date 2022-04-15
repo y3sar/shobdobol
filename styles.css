@@ -1,0 +1,163 @@
+body {
+    font-family: 'PT Serif', serif;
+    background-color: #1d2a0a
+}
+
+h1 {
+    text-align: center;
+    color: white;
+
+    padding: 2%;
+}
+
+
+.keyboard {
+    
+    width: min(90%, 600px);
+    display:flex;
+    gap: .5em;
+    justify-content: center;
+    align-content: center;
+    flex-wrap:wrap;
+    margin: auto;
+
+}
+
+.key {
+    user-select: none;
+    cursor: pointer;
+    padding: .5em;
+    border: .01px solid #ffffff;
+    border-radius: .5em;
+    color: white;
+    background-color: black;
+    font-weight: normal;
+    font-size: .9em;
+}
+
+.key[backspace]{
+    color: white;
+}
+
+.key:hover{
+    background-color: #8cbd6c;
+}
+
+
+
+.guess-grid {
+    display:grid;
+    gap: .5em;
+    justify-content: center;
+    align-content: center;
+    flex-grow: 1;
+    margin: auto;
+    grid-template-columns: repeat(3, 4em);
+    grid-template-rows: repeat(6, 4em);
+    margin-bottom: 1em;
+
+}
+
+.guess-cell{
+    text-align: center;
+    justify-content: center;
+    font-size: 2.5em;
+    color: white;
+    border: .05em solid hsl(240, 100%, 99%)
+}
+
+.-correct{
+    background-color: rgb(145, 212, 129);
+}
+
+.-incorrect{
+    background-color:rgb(255, 8, 0)
+}
+
+.-displaced{
+    background-color: rgb(230, 197, 106);
+}
+
+.left-correct{
+    background-image: linear-gradient(to right, rgb(145, 212, 129) 40%, rgba(0,0,0,0) 20%);
+
+}
+
+.left-incorrect{
+    background-image: linear-gradient(to right, rgb(255, 8, 0) 40%, rgba(0,0,0,0) 20%);
+
+}
+
+
+.left-displaced{
+    background-image: linear-gradient(to right, rgb(230, 197, 106) 40%, rgba(0,0,0,0) 20%);
+}
+
+
+.right-correct{
+    background-image: linear-gradient(to left, rgb(145, 212, 129) 40%, rgba(0,0,0,0) 20%);
+
+}
+
+
+.right-incorrect{
+    background-image: linear-gradient(to left, rgb(255, 8, 0) 40%, rgba(0,0,0,0) 20%);
+
+}
+
+.right-displaced{
+    background-image: linear-gradient(to left, rgb(230, 197, 106) 40%, rgba(0,0,0,0) 20%);
+    
+}
+
+.left-right-correct{
+    background-image:linear-gradient(to right, rgb(145, 212, 129), rgb(145, 212, 129) 20%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgb(145, 212, 129) 80%, rgb(145, 212, 129));
+}
+
+.left-right-incorrect{
+    background-image:linear-gradient(to right, rgb(255, 8, 0), rgb(255, 8, 0) 20%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgb(255, 8, 0) 80%, rgb(255, 8, 0));
+
+}
+
+.left-right-displaced{
+    background-image:linear-gradient(to right, rgb(230, 197, 106), rgb(230, 197, 106) 20%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgb(230, 197, 106) 80%, rgb(230, 197, 106));
+
+}
+
+
+.bottom-correct{
+    background-image: linear-gradient(to top, rgb(145, 212, 129) 30%, rgba(0,0,0,0) 20%);
+
+}
+
+.bottom-incorrect{
+    background-image: linear-gradient(to top, rgb(255, 8, 0) 30%, rgba(0,0,0,0) 20%);
+
+}
+
+.bottom-displaced{
+    background-image: linear-gradient(to top, rgb(230, 197, 106) 30%, rgba(0,0,0,0) 20%);
+
+}
+
+
+.top-correct{
+    background-image: linear-gradient(to bottom, rgb(145, 212, 129) 30%, rgba(0,0,0,0) 20%);
+
+}
+
+.top-incorrect{
+    background-image: linear-gradient(to bottom, rgb(255, 8, 0) 30%, rgba(0,0,0,0) 20%);
+
+}
+
+.top-displaced{
+    background-image: linear-gradient(to top, rgb(230, 197, 106) 30%, rgba(0,0,0,0) 20%);
+
+}
+
+
+
+
+
+
